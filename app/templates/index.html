@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block css %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/index.css') }}">
+<script src="{{ url_for('static',filename='js/index.js') }}" ></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASUNkGuA2TVIMetjobbJTAgyz6y29b4bE&callback=initMap&libraries=places&v=weekly"defer></script>
+{% endblock %}
+{% block head %}
+<title>CrowdWeave</title>
+{% endblock %}
+
+{% block body %}
+<!-- Image and text -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="{{url_for('static', filename='images/logo_green.png')}}" width="40" height="40" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand align-middle" href="#" style="padding-left: 20px;">CrowdWeave</a>
+</nav>
+<div id="map"></div>
+<div id="search">
+    <div id="searchInputContainer">
+        <input type="text" class="form-control" id="searchTextbox" placeholder="Search for a place">
+    </div>
+    <div style="height: 48px; padding: 5px;" id="searchBtnContainer">
+        <div id="searchBtn">
+            <button class="btn btn-primary" type="button">Search</button>
+        </div>
+    </div>
+    <div id="sidebar">
+        
+    </div>
+</div>
+
+<div id="sidebar2Close">
+</div>
+<div id="sidebar2">
+</div>
+{% endblock %}

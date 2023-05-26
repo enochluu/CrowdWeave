@@ -1,0 +1,144 @@
+@font-face{
+    font-family: trial;
+    src: url('/static/css/Montserrat-Regular.ttf');
+    font-weight: bold;
+}
+
+#map {
+    height: 95%;
+}
+
+#search {
+    top: 70px;
+    left: 10px;
+    position: absolute;
+    width: 350px;
+    max-height: 100px;
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.75);
+    transition:all 500ms ease-in-out;
+    margin-bottom: 5px;
+}
+
+#searchBtn{ 
+    height: 100%;
+    float: right;
+    background-size: cover;
+}
+
+#searchInputContainer {
+    z-index: 2;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    top: 0px;
+    height: 100%;
+    max-height: 120px;
+    float: left;
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+    position: relative;
+    transition:all 500ms ease-in-out;
+}
+
+#searchBtnContainer {
+    z-index: 1;
+    background-color: white;
+    left: 341px;
+    /* right: 0px; */
+    top: 0px;
+    position: absolute;
+    border-radius: 0px 5px 5px 0px;
+    height: 41px;
+    width: 107px;
+    padding: 2px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.75);
+}
+
+#sidebar {
+    height: 0;
+    width: 350px;
+    z-index: 1;
+    top: 56px;
+    right: -350px;
+    background-color: #F8F9FA;
+    overflow-y: scroll;
+    transition: 0.5s;
+}
+
+.place-card:hover {
+    cursor: pointer;
+}
+
+#sidebar2 {
+    height: 95%;
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+    top: 56px;
+    right: -550px;
+    background-color: #F8F9FA;
+    overflow-y: scroll;
+    transition: 0.5s;
+}
+
+#sidebar2Close {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 56px;
+    right: -50px;
+    background-color: #F8F9FA;
+    transition: 0.5s;
+    background-image: url("https://image.flaticon.com/icons/svg/1828/1828774.svg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sidebar2 img {
+    height: 20%;
+}
+
+#sidebar2Close:hover {
+    cursor: pointer;
+}
+
+html, body {
+    background-color: white;
+    font-family: trial;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    background-color: #7BAAF7;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    width: 100%;    
+    bottom: 0;
+}
+
+.popular-times {
+    display: flex;
+    align-items: baseline;
+    border-top: 1px dashed #E0E0E0;
+    width: 360px;
+    height: 76px;   
+    box-sizing: border-box;
+}
+
+.time-labels {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+.time-label {
+    font-size: 11px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
